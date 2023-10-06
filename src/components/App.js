@@ -53,8 +53,8 @@ function App() {
     
     return (
         <div id="main">
-            <input data-testid="input1" value={firstName} placeholder="Enter first name" onChange={(e) => setFirstName(e.target.value)}></input>
-            <input data-testid="input2" value={secondName} placeholder="Enter second name" onChange={(e) => setSecondName(e.target.value)}></input>
+            <input data-testid="input1" name="name1" value={firstName} placeholder="Enter first name" onChange={(e) => setFirstName(e.target.value)}></input>
+            <input data-testid="input2" name="name2" value={secondName} placeholder="Enter second name" onChange={(e) => setSecondName(e.target.value)}></input>
             <button data-testid="calculate_relationship" onClick={calculate}>Calculate Relationship Future</button>
             <button data-testid="clear" onClick={clearFields}>Clear</button>
             <h3 data-testid="answer">{result}</h3>
